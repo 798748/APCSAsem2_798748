@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=NumSort
+comment1.params=
+comment1.target=void\ main()
+comment10.params=sortList
+comment10.target=void\ bubbleList(java.util.ArrayList)
+comment2.params=
+comment2.target=void\ initialize()
+comment3.params=
+comment3.target=void\ findTime()
+comment4.params=
+comment4.target=int[]\ numFill()
+comment5.params=
+comment5.target=void\ listFill()
+comment6.params=inArray
+comment6.target=int[]\ mySort(int[])
+comment7.params=inArray
+comment7.target=int[]\ selectSort(int[])
+comment8.params=inArray
+comment8.target=int[]\ bubbleSort(int[])
+comment9.params=inArray
+comment9.target=int[]\ insertSort(int[])
+numComments=11
