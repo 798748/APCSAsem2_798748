@@ -1,33 +1,114 @@
-
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 /**
- * Write a description of class CanvasComponent here.
+ * MySwingApplication
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Cameron Snyder
+ * @version February 4
  */
-public class CanvasComponent
+public class CanvasComponent extends JComponent implements MouseListener, MouseMotionListener
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public int width;
+    public int height;
+    int mouseFromX;
+    int mouseFromY;
+    int rectX = 0;
+    int rectY = 0;
+    boolean shapeSelected;
 
     /**
      * Constructor for objects of class CanvasComponent
      */
-    public CanvasComponent()
+    public CanvasComponent(int w, int h)
     {
-        // initialise instance variables
-        x = 0;
+        setSize(w, h);
+        width = w;
+        height = h;
+        this.addMouseListener(this);
+        this.addMouseMotionListener(this);
     }
 
     /**
      * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * 
      */
-    public int sampleMethod(int y)
+    public void paintComponent(Graphics g)
     {
-        // put your code here
-        return x + y;
+        g.setColor(Color.black);
+        g.fillRect(rectX, rectY, width, height);
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     */
+    public void mouseClicked(MouseEvent e)
+    {
+        
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     */
+    public void mousePressed(MouseEvent e)
+    {
+        mouseFromX = e.getX();
+        mouseFromY = e.getY();
+        if (mouseFromX >= rectX && mouseFromX <= rectX+width && mouseFromY >= rectY && mouseFromY <= rectY+height){
+            shapeSelected = true;
+        }
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     */
+    public void mouseReleased(MouseEvent e)
+    {
+        
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     */
+    public void mouseEntered(MouseEvent e)
+    {
+        
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     */
+    public void mouseExited(MouseEvent e)
+    {
+        
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     */
+    public void mouseDragged(MouseEvent e)
+    {
+        if (shapeSelected){
+            int mouseToX = e.getX();
+            int mouseToY = e.getY();
+            rectX = mouseToX-mouseFromX;
+            rectY = mouseToY-mouseFromY;
+            repaint();
+        }
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     */
+    public void mouseMoved(MouseEvent e)
+    {
+        
     }
 }
