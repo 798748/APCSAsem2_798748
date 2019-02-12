@@ -1,20 +1,22 @@
 import javax.swing.*;
-import java.awt.*;
-
 /**
- * Write a description of class MySwingApplication here.
+ * MySwingApplication
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Cameron Snyder
+ * @version February 11
  */
 public class MySwingApplication implements Runnable{
     JFrame jFrame;
+    CanvasComponent canvasComponent;
+    
     public void run(){
         jFrame = new JFrame("Window");
         jFrame.setSize(400, 400);
+        canvasComponent = new CanvasComponent(100, 100);
+        jFrame.add(canvasComponent);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setVisible(true);
-        
+        jFrame.addKeyListener(canvasComponent);
     }
     
     public static void main(){

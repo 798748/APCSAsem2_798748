@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MySwingApplication
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MySwingApplication\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ MySwingApplication\r\n\r\n\ @author\ Cameron\ Snyder\r\n\ @version\ February\ 11\r\n
 comment1.params=
 comment1.target=void\ run()
 comment2.params=
