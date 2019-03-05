@@ -35,7 +35,6 @@ public class Deck {
             this.cards.add(aCard);
         }
         this.size = this.cards.size();
-        shuffle();
     }
 
     /**
@@ -72,7 +71,13 @@ public class Deck {
      *         previously dealt.
      */
     public Card deal() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        boolean isEmpty = true;
+        while(isEmpty){
+            if(isEmpty() == false){
+                isEmpty = false;
+            }
+        }
+        return this.cards.get((int)(Math.random() * this.cards.size()));
     }
 
     /**
