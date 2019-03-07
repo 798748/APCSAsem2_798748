@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=CodeWordChecker
+comment1.params=
+comment1.target=void\ main()
+comment2.params=minLength\ maxLength\ notIn
+comment2.target=CodeWordChecker(int,\ int,\ java.lang.String)
+comment3.params=notIn
+comment3.target=CodeWordChecker(java.lang.String)
+comment4.params=str
+comment4.target=boolean\ isValid(java.lang.String)
+numComments=5
