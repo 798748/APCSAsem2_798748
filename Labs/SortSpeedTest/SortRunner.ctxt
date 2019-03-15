@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=SortRunner
-comment0.text=\n\ Write\ a\ description\ of\ class\ SortRunner\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SortRunner\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=a
 comment1.target=boolean\ isSorted(int[])
 comment10.params=length
